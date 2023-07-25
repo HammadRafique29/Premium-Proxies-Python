@@ -89,13 +89,16 @@ class Proxies():
         
 
     def get_proxies(self):
-        print(f"#"*100) 
-        print("\t############### DOWNLOADING PROXIES! PLEASE WAIT (MAX 5 MIN) ... ###############")
-        self.website_1()
-        self.website_2()
-        self.website_3()
-        print(f"\t############### PROXIES DOWNLOADED SUCCESSFULLY (PROXIES.TXT-- {len(self.PROXIES)} ###############") 
-        print(f"#"*100) 
+        try:    
+            print(f"#"*100) 
+            print("\t############### DOWNLOADING PROXIES! PLEASE WAIT (MAX 5 MIN) ... ###############")
+            self.website_1()
+            self.website_2()
+            self.website_3()
+            print(f"\t############### PROXIES DOWNLOADED SUCCESSFULLY (PROXIES.TXT-- {len(self.PROXIES)} ###############") 
+            print(f"#"*100) 
+        except Exception as e:
+            print(e)
         
 
 
